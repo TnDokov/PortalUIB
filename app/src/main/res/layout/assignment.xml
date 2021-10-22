@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="9dp"
+    android:orientation="vertical"
+    android:layout_margin="7dp">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:padding="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/deadline"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deadline"
+                android:textColor="#aeaeae"
+
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/layoutdedline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/deadline"
+            >
+
+            <ImageView
+                android:id="@+id/ft_dot"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/reddote"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/ft_deadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ft_dot"
+                android:text="2 Days Left"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layoutdedline1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutdedline"
+            >
+            <TextView
+                android:id="@+id/ft_matkul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Design Interaksi"
+                android:layout_marginTop="15sp"
+                android:textSize="20sp"
+                 />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
