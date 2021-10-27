@@ -35,7 +35,6 @@ public class home extends Fragment {
             lokasift.add(new HelperClass(R.drawable.reddote, "2 Day Left", "Sistem Basis Data"));
             lokasift.add(new HelperClass(R.drawable.greendote, "5 Day Left", "Jaringan Enteprise"));
             lokasift.add(new HelperClass(R.drawable.greendote, "6 Day Left", "Jaringan Nirkabel"));
-
             adapter = new Adapter(lokasift);
         }
     }

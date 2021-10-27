@@ -1,17 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".calender">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".calender"
+    android:background="#333333">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:text="Calender" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calender"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#00bfa5"
+            />
+    </LinearLayout>
 
-</FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/calenderfoto"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/ic_baseline_calendar_today_24" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_toRightOf="@+id/calenderfoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Oct"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/name"
+            android:layout_marginTop="15dp"
+            android:text="  2021"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:background="@drawable/midradius"
+        android:orientation="vertical"
+        >
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/tablayoutcalender"
+            android:padding="1dp"
+            android:background="@drawable/radiustablayout"
+            app:tabMode="fixed"
+            android:layout_margin="6dp"
+            app:tabGravity="center"
+            app:tabIndicatorGravity="stretch"
+            app:tabSelectedTextColor="#fff"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicator="@drawable/indicator"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15dp"
+            >
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewpagercalender"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

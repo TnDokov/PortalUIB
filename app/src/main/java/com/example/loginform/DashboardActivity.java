@@ -1,41 +1,57 @@
 package com.example.loginform;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
+
 import android.os.Bundle;
 import com.google.android.material.tabs.TabLayout;
 
 public class DashboardActivity extends AppCompatActivity {
 
 
-    private ViewPager viewPager;
+    private ViewPager2 viewPager;
     private TabLayout tabLayout;
+    private VPadapter vPadapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard);
-
         tabLayout = findViewById(R.id.tablayout);
         viewPager = findViewById(R.id.viewpager);
 
 
-        VPadapter vPadapter = new VPadapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        vPadapter.addFragment(new home(),"");
-        vPadapter.addFragment(new calender(), "");
-        vPadapter.addFragment(new task(), "");
-        vPadapter.addFragment(new payment(), "");
-        vPadapter.addFragment(new setting(), "");
-
+        FragmentManager fm = getSupportFragmentManager();
+        vPadapter = new VPadapter(fm,getLifecycle());
         viewPager.setAdapter(vPadapter);
-        tabLayout.setupWithViewPager(viewPager);
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.home));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.calendar));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.task));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.bill));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.settings));
 
-        tabLayout.getTabAt(0).setIcon(R.drawable.home);
-        tabLayout.getTabAt(1).setIcon(R.drawable.calendar);
-        tabLayout.getTabAt(2).setIcon(R.drawable.task);
-        tabLayout.getTabAt(3).setIcon(R.drawable.bill);
-        tabLayout.getTabAt(4).setIcon(R.drawable.settings);
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+        viewPager.setUserInputEnabled(false);
 
 
     }

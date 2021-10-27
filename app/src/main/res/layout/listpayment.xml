@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radiustablayout"
+        android:orientation="horizontal"
+        android:padding="25dp"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jenisfee"
+            android:text="Total Unpaid"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jumlah"
+            android:text="Rp.4.700.000,-"
+            android:layout_below="@id/jenisfee"
+            />
+
+        <TextView
+            android:id="@+id/tanggalbayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="18 Okt 2021" />
+
+        <TextView
+            android:id="@+id/deskripsilunas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jenisfee"
+            android:gravity="right"
+            android:text="Lunas"
+            android:textColor="#378005" />
+    </RelativeLayout>
+
+</LinearLayout>

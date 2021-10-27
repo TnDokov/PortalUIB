@@ -6,35 +6,31 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-public class VPadapter extends FragmentStateAdapter {
+public class VPadapterCalender extends FragmentStateAdapter {
 
-    public VPadapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
-        super(fragmentManager, lifecycle);
+
+    public VPadapterCalender(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle){
+        super(fragmentManager,lifecycle);
     }
-
     @NonNull
     @Override
     public Fragment createFragment(int position) {
 
-
-        switch (position)
-        {
+        switch (position) {
             case 1:
-                return new calender();
+                return new tgl2();
             case 2:
-                return new task();
+                return new tgl3();
             case 3:
-                return new payment();
-            case 4:
-                return new setting();
+                return new tgl4();
             default:
-                return new home();
-        }
+                return new tgl1();
 
+        }
     }
 
     @Override
     public int getItemCount() {
-        return 5;
+        return 4;
     }
 }

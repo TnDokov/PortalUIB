@@ -7,11 +7,14 @@
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/drawable/botnavradius.xml" value="0.33645833333333336" />
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/drawable/cornerbutton.xml" value="0.3880208333333333" />
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/drawable/formborder.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/drawable/indicator.xml" value="0.2598958333333333" />
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/drawable/leftradius.xml" value="0.33645833333333336" />
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/drawable/midradius.xml" value="0.33645833333333336" />
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/drawable/profilebulet.xml" value="0.33645833333333336" />
+        <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/drawable/radiustablayout.xml" value="0.2598958333333333" />
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/drawable/rightradius.xml" value="0.33645833333333336" />
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/drawable/shadow.xml" value="0.3723958333333333" />
+        <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/drawable/swipe_design.xml" value="0.2598958333333333" />
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/activity_forgotpassword.xml" value="0.27943840579710144" />
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/assignment.xml" value="0.3223958333333333" />
@@ -21,6 +24,15 @@
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/fragment_payment.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/fragment_setting.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/fragment_task.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/fragment_task1.xml" value="0.24375" />
+        <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/fragment_task2.xml" value="0.24375" />
+        <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/fragment_task3.xml" value="0.24375" />
+        <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/fragment_tgl1.xml" value="0.32563405797101447" />
+        <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/fragment_tgl2.xml" value="0.24375" />
+        <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/fragment_tgl3.xml" value="0.24375" />
+        <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/fragment_tgl4.xml" value="0.24375" />
+        <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/listpayment.xml" value="0.371875" />
+        <entry key="..\:/Users/crazy/AndroidStudioProjects/LoginForm/app/src/main/res/layout/taskbox.xml" value="0.24375" />
       </map>
     </option>
   </component>

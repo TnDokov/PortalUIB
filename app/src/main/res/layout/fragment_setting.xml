@@ -3,14 +3,198 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".setting">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".setting"
+    android:background="#333333">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:text="Setting" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="#00bfa5"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
 
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+               >
+
+                <LinearLayout
+                    android:layout_width="95dp"
+                    android:layout_height="130dp"
+                    android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/jennie2" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="310dp"
+                    android:layout_height="130dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Louis Vernando"
+                        android:textColor="#00bfa5"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/npm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/name"
+                        android:text="NPM : 2032017"
+                        android:textColor="#aeaeae"
+                        android:textSize="13sp" />
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="530dp"
+            android:padding="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/midradius">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Pin"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                />
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:src="@drawable/arrow"
+                   android:layout_marginLeft="250dp"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/arrow"
+                    android:layout_marginLeft="211.5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Push Notification"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+
+                    />
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_marginLeft="190dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dark Mode"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+
+                    />
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="228dp"
+                    />
+            </LinearLayout>
+
+            <com.ebanx.swipebtn.SwipeButton
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="25dp"
+                app:button_bottom_padding="15dp"
+                app:button_image_disabled="@drawable/ic_baseline_lock_open_24"
+                app:button_image_enabled="@drawable/ic_baseline_lock_24"
+                app:button_left_padding="15dp"
+                app:button_right_padding="15dp"
+                app:button_top_padding="15dp"
+                app:inner_text="Log Out"
+                app:inner_text_bottom_padding="15dp"
+                app:inner_text_top_padding="15dp" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
 </FrameLayout>
