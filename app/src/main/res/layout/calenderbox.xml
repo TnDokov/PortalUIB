@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/leftradius"
+            android:elevation="2dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/waktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18:00"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/wib1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/waktu"
+                android:text="Wib"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/classjadwal1"
+            android:layout_width="270dp"
+            android:layout_height="110dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/rightradius"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/matkul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Sistem Basis Data"
+                android:textColor="#f3a401"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/matkul"
+                android:text="Class : Online"
+                android:textColor="#aeaeae"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/namadosen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kelas"
+                android:text="Stefanus Eko Prasetyo, S.Kom., M.MSI."
+                android:textColor="#aeaeae"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+</LinearLayout>

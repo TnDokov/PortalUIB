@@ -25,6 +25,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tanggaldeadline"
             android:text="Time : 16:00, 30 October 2021"
+            android:textColor="#f3a401"
             android:layout_marginLeft="70dp"
             />
     </LinearLayout>

@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".task"
-    android:background="#333333">
+    android:background="#1e3058">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
             android:text="Task"
             android:textStyle="bold"
             android:textSize="30dp"
-            android:textColor="#00bfa5"
+            android:textColor="#f3a401"
             />
     </LinearLayout>
 
@@ -64,29 +64,29 @@
         android:background="@drawable/midradius"
         android:orientation="vertical"
         >
-        <com.google.android.material.tabs.TabLayout
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:id="@+id/tablayouttask"
-            android:padding="1dp"
-            android:background="@drawable/radiustablayout"
-            app:tabMode="fixed"
-            android:layout_margin="6dp"
-            app:tabGravity="center"
+        <CalendarView
+            android:id="@+id/cal"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:background="@drawable/bg_calender"
+            android:layout_gravity="center"
             app:tabIndicatorGravity="stretch"
-            app:tabSelectedTextColor="#fff"
             app:tabIndicatorAnimationMode="elastic"
-            app:tabIndicator="@drawable/indicator"
-            />
+            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+            >
+
+        </CalendarView>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-15dp"
+            android:layout_marginTop="-50dp"
+            android:gravity="center"
             >
-            <androidx.viewpager2.widget.ViewPager2
-                android:layout_width="match_parent"
-                android:layout_height="520dp"
-                android:id="@+id/viewpagertask"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_task"
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_marginTop="15dp"
                 />
         </LinearLayout>
 

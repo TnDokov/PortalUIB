@@ -38,9 +38,10 @@ public class payment extends Fragment {
         lokasift.add(new HelperPayment("Ganjil 2020","Rp.19.325.000,-","18 Okt 2021","Lunas"));
         lokasift.add(new HelperPayment("Genap 2020","Rp.8.825.000,-","18 Okt 2021","Lunas"));
         lokasift.add(new HelperPayment("Sisipan Genap 2020","Rp.875.000,-","18 Okt 2021","Lunas"));
-
-
-
+        lokasift.add(new HelperPayment("Genap 2020","Rp.8.825.000,-","18 Okt 2021","Lunas"));
+        lokasift.add(new HelperPayment("Sisipan Genap 2020","Rp.875.000,-","18 Okt 2021","Lunas"));
+        lokasift.add(new HelperPayment("Genap 2020","Rp.8.825.000,-","18 Okt 2021","Lunas"));
+        lokasift.add(new HelperPayment("Sisipan Genap 2020","Rp.875.000,-","18 Okt 2021","Lunas"));
 
         adapter = new AdapterPayment(lokasift);
     }
